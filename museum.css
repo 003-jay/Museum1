@@ -760,7 +760,8 @@ body {
     }
     
     .hero {
-        margin-top: 260px;
+        margin-top: 0;
+        padding-top: 100px;
     }
     
     .hero-content {
@@ -849,7 +850,8 @@ body {
     }
     
     .hero {
-        margin-top: 240px;
+        margin-top: 0;
+        padding-top: 80px;
         height: 80vh;
     }
     
