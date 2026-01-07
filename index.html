@@ -19,7 +19,12 @@
                 <div class="subtitle">Museum</div>
             </div>
         </div>
-        <div class="line">
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="line" id="navMenu">
             <div class="mi"> 
                 <ol class="olitems">
                     <li><a href="#exhibitions">EXHIBITIONS</a></li>
@@ -243,5 +248,25 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = navMenu.querySelectorAll('a');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
