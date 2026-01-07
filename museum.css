@@ -770,8 +770,22 @@ body {
         gap: 2rem;
     }
     
+    .hero-text {
+        width: 100%;
+    }
+    
     .hero-text h1 {
         font-size: 2.5rem;
+        color: #2c1810;
+    }
+    
+    .hero-text p {
+        color: #2c1810;
+        font-size: 1rem;
+    }
+    
+    .hero-image {
+        display: none;
     }
     
     .hero-buttons {
@@ -855,12 +869,18 @@ body {
         height: 80vh;
     }
     
+    .hero-image {
+        display: none;
+    }
+    
     .hero-text h1 {
         font-size: 1.8rem;
+        color: #2c1810;
     }
     
     .hero-text p {
-        font-size: 0.9rem;
+        color: #2c1810;
+        font-size: 0.95rem;
     }
     
     .btn-primary, .btn-secondary {
